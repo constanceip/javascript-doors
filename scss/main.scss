@@ -1,0 +1,72 @@
+
+%font{
+  font-family: 'Poiret One', cursive;
+  text-align:center;
+}
+
+body{
+    background:url("http://freestocktextures.net/wp-content/uploads/2013/10/Free-Mixed-Colour-Paper-Texture-Aqua-and-Tan.jpg");
+
+}
+
+header {
+  margin-top:20px;
+}
+
+h1{
+  @extend %font;
+  font-size:2.5em;
+}
+
+h2 {
+  @extend %font;
+  font-size: 1.5em;
+  color: #ccc; 
+
+}
+
+button {
+  @extend %font;
+  font-size: 1em;
+  clear:both;
+  padding: 1em 2em;
+  border-radius: 2em;
+  border:1px solid grey;
+  box-sizing: border-box;
+  margin-left: 35%;
+  background:#EE5C42;
+  cursor:pointer;
+}
+
+.clear {
+  clear:both;
+}
+
+%door {
+  color:white;
+  width: 140px;
+  height:300px;
+  margin: 2em 3em;
+  border-top-left-radius:3em;
+  border-top-right-radius:3em;
+  border-bottom-right-radius:0em;
+  border-bottom-left-radius:0em;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Poiret One', cursive;
+  display: inline-block;
+  float:left;
+}
+
+#door1, #door2, #door3, #door4 {
+   @extend %door;
+   background:black;
+   margin-left: -1.1em;
+   margin-top: -2.2em;
+ }
+
+#menu1, #menu2, #menu3, #menu4 {
+  @extend %door;
+  background:rgba(0,0,0,0.5);
+}
